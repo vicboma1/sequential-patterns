@@ -1,4 +1,4 @@
-sequences-patterns
+Sequenc-patterns
 ==================
 
 Game loops core
