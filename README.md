@@ -1,4 +1,3 @@
-Sequenc-patterns
+Sequential-patterns
 ==================
-
-Game loops core
+  * ```Game Loop```
