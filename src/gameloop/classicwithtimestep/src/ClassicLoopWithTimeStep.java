@@ -26,10 +26,9 @@ public class ClassicLoopWithTimeStep implements Game {
     private int ticksPerSeconds;
 
 
-    public ClassicLoopWithTimeStep(Render render, Processor processor, Long frames) {
+    public ClassicLoopWithTimeStep(Render render, Processor processor) {
         this.processor = processor;
         this.render = render;
-        //   this.frames = frames;
         prepareSprite();
     }
 

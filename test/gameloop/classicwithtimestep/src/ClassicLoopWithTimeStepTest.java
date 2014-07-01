@@ -13,8 +13,7 @@ public class ClassicLoopWithTimeStepTest {
         final Render render = new Render(windows);
         final Processor processor = new Processor();
 
-        final long frames = 60L;
-        final ClassicLoopWithTimeStep classicLoop = new ClassicLoopWithTimeStep(render,processor, frames);
+        final ClassicLoopWithTimeStep classicLoop = new ClassicLoopWithTimeStep(render,processor);
         classicLoop.mainLoop();
 
     }
