@@ -3,7 +3,7 @@ Sequential-patterns
 [Game Loop](https://github.com/victorakamon/sequential-patterns/tree/master/src/gameloop)
 
 * [Classic](https://github.com/victorakamon/sequential-patterns/tree/master/src/gameloop/classic) / [Test](https://github.com/victorakamon/sequential-patterns/tree/master/test/gameloop/classic/src/ClassicLoopTest.java)
-* [Classic with time step](https://github.com/victorakamon/sequential-patterns/tree/master/src/gameloop/classic) / [Test](https://github.com/victorakamon/sequential-patterns/blob/master/test/gameloop/classicwithtimestep/src/ClassicLoopWithTimeStepTest.java)
+* [Classic with time step](https://github.com/victorakamon/sequential-patterns/tree/master/src/gameloop/classicwithtimestep) / [Test](https://github.com/victorakamon/sequential-patterns/blob/master/test/gameloop/classicwithtimestep/src/ClassicLoopWithTimeStepTest.java)
 
  References:
   * http://www.java-gaming.org/index.php?topic=24220.0
