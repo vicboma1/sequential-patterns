@@ -1,4 +1,4 @@
-package classic.utils.keyBoard;
+package gameloop.classic.utils.keyBoard;
 
 /**
  * Created by vicboma on 30/06/14.

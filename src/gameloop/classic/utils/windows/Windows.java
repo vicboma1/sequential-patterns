@@ -1,4 +1,4 @@
-package classic.utils.windows;
+package gameloop.classic.utils.windows;
 
 import java.awt.*;
 import java.awt.event.WindowAdapter;

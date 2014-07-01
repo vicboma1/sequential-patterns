@@ -1,7 +1,7 @@
-package classic.utils.render;
+package gameloop.classic.utils.render;
 
-import classic.utils.sprite.Sprite2D;
-import classic.utils.windows.Windows;
+import gameloop.classic.utils.sprite.Sprite2D;
+import gameloop.classic.utils.windows.Windows;
 
 import java.awt.image.BufferedImage;
 import java.util.List;

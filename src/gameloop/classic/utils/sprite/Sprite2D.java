@@ -1,4 +1,4 @@
-package classic.utils.sprite;
+package gameloop.classic.utils.sprite;
 
 import javax.swing.*;
 import java.awt.*;

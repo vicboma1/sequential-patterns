@@ -1,9 +1,9 @@
-package classic.src;
+package gameloop.classic.src;
 
-import api.Game;
-import classic.utils.processor.Processor;
-import classic.utils.render.Render;
-import classic.utils.sprite.Sprite2D;
+import gameloop.api.Game;
+import gameloop.classic.utils.processor.Processor;
+import gameloop.classic.utils.render.Render;
+import gameloop.classic.utils.sprite.Sprite2D;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -26,7 +26,7 @@ public class ClassicLoop implements Game {
 
     private void prepareSprite() {
         this.sprite2DList = new ArrayList<Sprite2D>();
-        Sprite2D sprite2D = new Sprite2D("./src/classic/utils/resource/pop1.png");
+        Sprite2D sprite2D = new Sprite2D("./src/gameloop/classic/utils/resource/pop1.png");
 
         for(int i=0 ; i<11 ;i++)
         {

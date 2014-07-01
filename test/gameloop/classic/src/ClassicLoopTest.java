@@ -1,8 +1,8 @@
-package classic.src;
+package gameloop.classic.src;
 
-import classic.utils.processor.Processor;
-import classic.utils.render.Render;
-import classic.utils.windows.Windows;
+import gameloop.classic.utils.processor.Processor;
+import gameloop.classic.utils.render.Render;
+import gameloop.classic.utils.windows.Windows;
 
 public class ClassicLoopTest {
 

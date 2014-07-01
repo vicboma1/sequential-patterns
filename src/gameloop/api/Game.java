@@ -1,4 +1,4 @@
-package api;
+package gameloop.api;
 
 /**
  * Created by vicboma on 30/06/14.

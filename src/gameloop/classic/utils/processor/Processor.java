@@ -1,6 +1,6 @@
-package classic.utils.processor;
+package gameloop.classic.utils.processor;
 
-import classic.utils.sprite.Sprite2D;
+import gameloop.classic.utils.sprite.Sprite2D;
 
 import java.util.List;
 

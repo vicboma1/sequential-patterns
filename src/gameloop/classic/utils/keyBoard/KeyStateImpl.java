@@ -1,4 +1,4 @@
-package classic.utils.keyBoard;
+package gameloop.classic.utils.keyBoard;
 
 import javax.swing.*;
 import java.awt.event.KeyEvent;
