@@ -32,7 +32,7 @@ public class ClassicLoop implements Game {
         {
             for(int j=0; j<18 ;j++) {
                 Sprite2D sprite2DClone = sprite2D.copy();
-                sprite2D.point(new Point(sprite2DClone.width() * j , sprite2DClone.height() * i));
+                sprite2DClone.position(new Point(sprite2DClone.width() * j, sprite2DClone.height() * i));
                 sprite2DList.add(sprite2DClone);
             }
         }

@@ -26,12 +26,8 @@ public class Sprite2D implements Cloneable{
         position.y = y;
     }
 
-    public void point(Point position) {
+    public void position(Point position) {
         this.position = position;
-    }
-
-    public Point position(){
-        return this.position;
     }
 
     public int width(){
