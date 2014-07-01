@@ -26,7 +26,7 @@ public class ClassicLoop implements Game {
 
     private void prepareSprite() {
         this.sprite2DList = new ArrayList<Sprite2D>();
-        Sprite2D sprite2D = new Sprite2D("/Users/vicboma/Downloads/pop1.png");
+        Sprite2D sprite2D = new Sprite2D("./src/classic/utils/resource/pop1.png");
 
         for(int i=0 ; i<11 ;i++)
         {
