@@ -2,7 +2,9 @@ Sequential-patterns
 ==================
 * [Game Loop](https://github.com/victorakamon/sequential-patterns/tree/master/src/gameloop) / [Test](https://github.com/victorakamon/sequential-patterns/blob/master/test/gameloop)
   * ```Classic```
-  * ```Classic with time step```
+  * ```Classic with Fixed time step```
+  * ```Time Step Variable```
+  
 
  References:
   * http://www.java-gaming.org/index.php?topic=24220.0
@@ -11,7 +13,8 @@ Sequential-patterns
   * http://notatkiprogramisty.blox.pl/2014/04/Programowanie-Gier-glowna-petla-gry-ang-game-loop.html
   * Glenn Fiedler - http://gafferongames.com/game-physics/fix-your-timestep/
   * Kevin Glass - http://www.cokeandcode.com/info/showsrc/showsrc.php?src=../spaceinvaders102/org/newdawn/spaceinvaders/Game.java
-
+  * L. Spiro - http://lspiroengine.com/?p=378
+  
  Best practices:
   * Multithreaded Game Loop Async (Backend) : http://www.mundijuegos.com/multijugador/knockout-bingo/
 
