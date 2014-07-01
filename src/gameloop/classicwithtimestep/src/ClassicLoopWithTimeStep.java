@@ -14,27 +14,36 @@ import java.util.List;
  */
 public class ClassicLoopWithTimeStep implements Game {
 
-    public static final int MILLISECOND = 1000;
-    public static final int EXPECTED_FPS = 60;
+    private static final int UPDATES_PER_SECOND = 55;
+    private static final int MILLISECOND = 1000;
+    private static final int SKIP_TICKS = MILLISECOND / UPDATES_PER_SECOND;
+    private static final int MAX_FRAMES = 12;
+    private static final int EXPECTED_FPS = 60;
+
+    public static final String RESOURCE_PATH = "./src/gameloop/resource/pop1.png";
 
     private Render render;
     private Processor processor;
     private List<Sprite2D> sprite2DList;
-    private int loops;
+    private int fixedLoop;
     private long previousTime;
     private long actualTime;
-    private int ticksPerSeconds;
+
+    private int ticksPerSecondFPS;
+    private int ticksFPS;
+    private long initTimeFPS;
 
 
     public ClassicLoopWithTimeStep(Render render, Processor processor) {
         this.processor = processor;
         this.render = render;
+        this.ticksFPS = 0;
         prepareSprite();
     }
 
     private void prepareSprite() {
-        this.sprite2DList = new ArrayList<Sprite2D>();
-        Sprite2D sprite2D = new Sprite2D("./src/gameloop/classic/utils/resource/pop1.png");
+        this.sprite2DList = new ArrayList();
+        Sprite2D sprite2D = new Sprite2D(RESOURCE_PATH);
 
         for (int i = 0; i < 11; i++) {
             for (int j = 0; j < 18; j++) {
@@ -47,42 +56,32 @@ public class ClassicLoopWithTimeStep implements Game {
 
     @Override
     public void mainLoop() throws InterruptedException {
-
-        int ticks = 0;
-        final int UPDATES_PER_SECOND = 55;
-        final int SKIP_TICKS = MILLISECOND / UPDATES_PER_SECOND;
-
-        previousTime = getCurrentTimeMillis();
-
-        long init = getCurrentTimeMillis();
+        this.previousTime = getCurrentTimeMillis();
+        this.initTimeFPS = this.previousTime;
 
         while (true) {
-            ticks++;
+            this.ticksFPS++;
             processInput();
 
-            this.loops = 0;
+            this.fixedLoop = 0;
             this.actualTime = getCurrentTimeMillis();
             while (isUpdate() && isSlowFrames()) {
                 update();
                 this.previousTime += SKIP_TICKS;
-                this.loops++;
+                this.fixedLoop++;
             }
 
-            final long actual = getCurrentTimeMillis();
-            final long timeElapsed = actual - init;
-            if (timeElapsed >= MILLISECOND) {
-                init = getCurrentTimeMillis();
-                ticksPerSeconds = ticks;
-                ticks = 0;
-            }
-
+            framePerSecond();
             draw();
         }
     }
 
+    private void update() {
+        this.processor.update(sprite2DList);
+    }
+
     private boolean isSlowFrames() {
-        final int MAX_FRAMES = 12;
-        return this.loops < MAX_FRAMES;
+        return this.fixedLoop < MAX_FRAMES;
     }
 
     private boolean isUpdate() {
@@ -93,17 +92,24 @@ public class ClassicLoopWithTimeStep implements Game {
         return System.currentTimeMillis();
     }
 
+    private void framePerSecond() {
+        final long actualTimeMillisFPS = getCurrentTimeMillis();
+        final long timeElapsedFPS = actualTimeMillisFPS - initTimeFPS;
+        if (timeElapsedFPS >= MILLISECOND) {
+            this.initTimeFPS = getCurrentTimeMillis();
+            this.ticksPerSecondFPS = this.ticksFPS;
+            this.ticksFPS = 0;
+        }
+    }
+
     private void draw() {
         this.render.begin();
         this.render.draw("PreviousTime: " + previousTime, 0, 12);
         this.render.draw("ActualTime: " + actualTime, 210, 12);
-        this.render.draw("Frames Per Second: " + this.ticksPerSeconds + " = " + EXPECTED_FPS + " " + (this.ticksPerSeconds == EXPECTED_FPS), 400, 12);
+        this.render.draw("Diff: " + (previousTime-actualTime), 400, 12);
+        this.render.draw("Frames Per Second: " + this.ticksPerSecondFPS + " = " + EXPECTED_FPS + " " + (this.ticksPerSecondFPS >= EXPECTED_FPS), 450, 12);
         this.render.draw(sprite2DList);
         this.render.end();
-    }
-
-    private void update() {
-        this.processor.update(sprite2DList);
     }
 
     private void processInput() {

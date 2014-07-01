@@ -26,7 +26,7 @@ public class ClassicLoop implements Game {
 
     private void prepareSprite() {
         this.sprite2DList = new ArrayList<Sprite2D>();
-        Sprite2D sprite2D = new Sprite2D("./src/gameloop/classic/utils/resource/pop1.png");
+        Sprite2D sprite2D = new Sprite2D("./src/gameloop/resource/pop1.png");
 
         for(int i=0 ; i<11 ;i++)
         {
@@ -46,7 +46,7 @@ public class ClassicLoop implements Game {
             processInput();
             update();
             draw();
-            Thread.sleep(10);
+            Thread.sleep(16);
         }
     }
 
