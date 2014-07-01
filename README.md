@@ -9,6 +9,8 @@ Sequential-patterns
   * http://entropyinteractive.com/2011/02/game-engine-design-the-game-loop/  
   * http://stackoverflow.com/questions/18283199/java-main-game-loop
   * http://notatkiprogramisty.blox.pl/2014/04/Programowanie-Gier-glowna-petla-gry-ang-game-loop.html
+  * Glenn Fiedler - http://gafferongames.com/game-physics/fix-your-timestep/
+  * Kevin Glass - http://www.cokeandcode.com/info/showsrc/showsrc.php?src=../spaceinvaders102/org/newdawn/spaceinvaders/Game.java
 
  Best practices:
   * Multithreaded Game Loop Async (Backend) : http://www.mundijuegos.com/multijugador/knockout-bingo/
