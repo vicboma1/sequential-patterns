@@ -1,4 +1,4 @@
-package gameloop.timestepvariable.utils.sprite;
+package gameloop.variabletimestep.utils.sprite;
 
 import javax.swing.*;
 import java.awt.*;

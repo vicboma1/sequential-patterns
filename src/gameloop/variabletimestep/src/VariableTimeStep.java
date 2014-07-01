@@ -1,9 +1,9 @@
-package gameloop.timestepvariable.src;
+package gameloop.variabletimestep.src;
 
 import gameloop.api.Game;
-import gameloop.timestepvariable.utils.processor.Processor;
-import gameloop.timestepvariable.utils.render.Render;
-import gameloop.timestepvariable.utils.sprite.Sprite2D;
+import gameloop.variabletimestep.utils.processor.Processor;
+import gameloop.variabletimestep.utils.render.Render;
+import gameloop.variabletimestep.utils.sprite.Sprite2D;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Created by vicboma on 30/06/14.
  */
-public class TimeStepWithVariable implements Game {
+public class VariableTimeStep implements Game {
 
     public static final String RESOURCE_PATH = "./src/gameloop/resource/pop1.png";
     private static final int EXPECTED_FPS = 60;
@@ -33,7 +33,7 @@ public class TimeStepWithVariable implements Game {
     private long millis;
 
 
-    public TimeStepWithVariable(Render render, Processor processor) {
+    public VariableTimeStep(Render render, Processor processor) {
         this.processor = processor;
         this.render = render;
         this.ticksFPS = 0;

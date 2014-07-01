@@ -1,6 +1,6 @@
-package gameloop.timestepvariable.utils.processor;
+package gameloop.variabletimestep.utils.processor;
 
-import gameloop.timestepvariable.utils.sprite.Sprite2D;
+import gameloop.variabletimestep.utils.sprite.Sprite2D;
 
 import java.util.List;
 

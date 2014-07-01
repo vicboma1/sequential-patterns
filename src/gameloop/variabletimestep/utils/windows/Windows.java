@@ -1,4 +1,4 @@
-package gameloop.timestepvariable.utils.windows;
+package gameloop.variabletimestep.utils.windows;
 
 import java.awt.*;
 import java.awt.event.WindowAdapter;
