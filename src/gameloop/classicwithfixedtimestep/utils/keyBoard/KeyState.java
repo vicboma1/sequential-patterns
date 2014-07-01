@@ -1,4 +1,4 @@
-package gameloop.classicwithtimestep.utils.keyBoard;
+package gameloop.classicwithfixedtimestep.utils.keyBoard;
 
 /**
  * Created by vicboma on 30/06/14.

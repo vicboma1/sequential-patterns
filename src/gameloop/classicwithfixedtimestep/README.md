@@ -1,4 +1,4 @@
-Classic Game Loop with Time Step
+Classic Game Loop with Fixed Time Step 
 ==================
 
 This is the classic game loop with Time Step and Maximum FPS fixed.

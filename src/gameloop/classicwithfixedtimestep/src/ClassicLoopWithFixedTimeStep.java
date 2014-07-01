@@ -1,9 +1,9 @@
-package gameloop.classicwithtimestep.src;
+package gameloop.classicwithfixedtimestep.src;
 
 import gameloop.api.Game;
-import gameloop.classicwithtimestep.utils.processor.Processor;
-import gameloop.classicwithtimestep.utils.render.Render;
-import gameloop.classicwithtimestep.utils.sprite.Sprite2D;
+import gameloop.classicwithfixedtimestep.utils.processor.Processor;
+import gameloop.classicwithfixedtimestep.utils.render.Render;
+import gameloop.classicwithfixedtimestep.utils.sprite.Sprite2D;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -12,16 +12,14 @@ import java.util.List;
 /**
  * Created by vicboma on 30/06/14.
  */
-public class ClassicLoopWithTimeStep implements Game {
+public class ClassicLoopWithFixedTimeStep implements Game {
 
+    public static final String RESOURCE_PATH = "./src/gameloop/resource/pop1.png";
     private static final int UPDATES_PER_SECOND = 55;
     private static final int MILLISECOND = 1000;
     private static final int SKIP_TICKS = MILLISECOND / UPDATES_PER_SECOND;
     private static final int MAX_FRAMES = 12;
     private static final int EXPECTED_FPS = 60;
-
-    public static final String RESOURCE_PATH = "./src/gameloop/resource/pop1.png";
-
     private Render render;
     private Processor processor;
     private List<Sprite2D> sprite2DList;
@@ -34,7 +32,7 @@ public class ClassicLoopWithTimeStep implements Game {
     private long initTimeFPS;
 
 
-    public ClassicLoopWithTimeStep(Render render, Processor processor) {
+    public ClassicLoopWithFixedTimeStep(Render render, Processor processor) {
         this.processor = processor;
         this.render = render;
         this.ticksFPS = 0;

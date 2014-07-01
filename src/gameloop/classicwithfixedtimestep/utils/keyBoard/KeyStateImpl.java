@@ -1,4 +1,4 @@
-package gameloop.classicwithtimestep.utils.keyBoard;
+package gameloop.classicwithfixedtimestep.utils.keyBoard;
 
 import javax.swing.*;
 import java.awt.event.KeyEvent;

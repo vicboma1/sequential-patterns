@@ -1,4 +1,4 @@
-package gameloop.classicwithtimestep.utils.windows;
+package gameloop.classicwithfixedtimestep.utils.windows;
 
 import java.awt.*;
 import java.awt.event.WindowAdapter;
@@ -27,15 +27,15 @@ public class Windows extends Canvas {
         this.requestFocus();
     }
 
-    public Graphics graphics(){
+    public Graphics graphics() {
         return this.getGraphics();
     }
 
-    public int width(){
+    public int width() {
         return this.getWidth();
     }
 
-    public int heigth(){
+    public int heigth() {
         return this.getHeight();
     }
 }

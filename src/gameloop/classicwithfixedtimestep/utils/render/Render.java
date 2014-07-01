@@ -1,7 +1,7 @@
-package gameloop.classicwithtimestep.utils.render;
+package gameloop.classicwithfixedtimestep.utils.render;
 
-import gameloop.classicwithtimestep.utils.sprite.Sprite2D;
-import gameloop.classicwithtimestep.utils.windows.Windows;
+import gameloop.classicwithfixedtimestep.utils.sprite.Sprite2D;
+import gameloop.classicwithfixedtimestep.utils.windows.Windows;
 
 import java.awt.image.BufferedImage;
 import java.util.List;
@@ -22,19 +22,19 @@ public class Render {
         this.heigth = this.windows.heigth();
     }
 
-    public void begin(){
+    public void begin() {
         this.bufferedImage = new BufferedImage(this.width, this.heigth, BufferedImage.TYPE_INT_RGB);
     }
 
-    public void end(){
+    public void end() {
         this.windows.graphics().drawImage(bufferedImage, 0, 0, windows);
     }
 
     public void draw(List<Sprite2D> sprite2DList) {
-        sprite2DList.stream().sequential().forEach( x -> x.drawRotate(bufferedImage.getGraphics()));
+        sprite2DList.stream().sequential().forEach(x -> x.drawRotate(bufferedImage.getGraphics()));
     }
 
-    public void draw(String message,Integer x, Integer y) {
-        bufferedImage.getGraphics().drawString(message,x,y);
+    public void draw(String message, Integer x, Integer y) {
+        bufferedImage.getGraphics().drawString(message, x, y);
     }
 }
