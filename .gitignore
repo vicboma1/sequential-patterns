@@ -5,3 +5,27 @@
 /.settings
 .project
 
+game loops.iml
+.idea/compiler.xml
+.idea/description.html
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/uiDesigner.xml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/copyright/profiles_settings.xml
+.idea/scopes/scope_settings.xml
+out/production/game loops/README.md
+out/production/game loops/api/Game.class
+out/production/game loops/classic/src/ClassicLoop.class
+out/production/game loops/utils/keyBoard/KeyState.class
+out/production/game loops/utils/keyBoard/KeyStateImpl$1.class
+out/production/game loops/utils/keyBoard/KeyStateImpl.class
+out/production/game loops/utils/processor/Processor.class
+out/production/game loops/utils/render/Render.class
+out/production/game loops/utils/sprite/Sprite2D.class
+out/production/game loops/utils/windows/Windows$1.class
+out/production/game loops/utils/windows/Windows.class
+out/test/game loops/README.md
+out/test/game loops/classic/src/ClassicLoopTest.class
