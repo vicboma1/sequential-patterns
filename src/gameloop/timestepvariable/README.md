@@ -7,7 +7,7 @@ Time Step with Variable in Game Loop
 
 * Advantages
   * ```Smooth```
-  * ```Easier to code``
+  * ```Easier to code```
   * ```Delta time between each update to vary the movement of objects```
   
 * Disadvantages
