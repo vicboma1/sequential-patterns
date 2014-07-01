@@ -2,7 +2,7 @@ Sequential-patterns
 ==================
 * [Game Loop](https://github.com/victorakamon/sequential-patterns/tree/master/src/gameloop) / [Test](https://github.com/victorakamon/sequential-patterns/blob/master/test/gameloop)
   * ```Classic```
-  * ```Classic with Fixed time step```
+  * ```Classic with Fixed Time Step```
   * ```Time Step Variable```
   
 
