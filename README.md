@@ -1,9 +1,8 @@
 Sequential-patterns
 ==================
-[Game Loop](https://github.com/victorakamon/sequential-patterns/tree/master/src/gameloop) / [Test](https://github.com/victorakamon/sequential-patterns/blob/master/test/gameloop)
-
-* ```Classic```
-* ```Classic with time step```
+* [Game Loop](https://github.com/victorakamon/sequential-patterns/tree/master/src/gameloop) / [Test](https://github.com/victorakamon/sequential-patterns/blob/master/test/gameloop)
+  * ```Classic```
+  * ```Classic with time step```
 
  References:
   * http://www.java-gaming.org/index.php?topic=24220.0
