@@ -1,5 +1,6 @@
-package gameloop.utils.processor;
+package updateMethod.processor;
 
+import gameloop.api.Updateable;
 import gameloop.utils.sprite.Sprite2D;
 
 import java.util.List;
@@ -7,7 +8,7 @@ import java.util.List;
 /**
  * Created by vicboma on 01/07/14.
  */
-public class Processor {
+public class Processor implements Updateable {
 
     public Processor() {
     }
