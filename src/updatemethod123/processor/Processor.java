@@ -1,4 +1,4 @@
-package updateMethod.processor;
+package updatemethod123.processor;
 
 import gameloop.api.Updateable;
 import gameloop.utils.sprite.Sprite2D;
