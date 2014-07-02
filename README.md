@@ -3,7 +3,7 @@ Sequential-patterns
 * [Game Loop](https://github.com/victorakamon/sequential-patterns/tree/master/src/gameloop) / [Test](https://github.com/victorakamon/sequential-patterns/blob/master/test/gameloop)
   * ```Classic```
   * ```Classic with Fixed Time Step```
-  * ```Time Step Variable```
+  * ```Variable Time Step```
   
 * [Double Buffer](https://github.com/victorakamon/sequential-patterns/tree/master/src/doublebuffer) / [Test](https://github.com/victorakamon/sequential-patterns/blob/master/test/doublebuffer)
   
