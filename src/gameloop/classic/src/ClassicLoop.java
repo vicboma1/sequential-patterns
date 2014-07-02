@@ -2,8 +2,8 @@ package gameloop.classic.src;
 
 import doublebuffer.render.Render;
 import gameloop.api.Game;
-import gameloop.api.Updateable;
 import gameloop.utils.sprite.Sprite2D;
+import updatemethod.processor.Processor;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -17,10 +17,10 @@ public class ClassicLoop implements Game {
     public static final String RESOURCE_PATH = "./src/gameloop/utils/resource/pop1.png";
 
     private Render render;
-    private Updateable processor;
+    private Processor processor;
     private List<Sprite2D> sprite2DList;
 
-    public ClassicLoop(Render render, Updateable processor) {
+    public ClassicLoop(Render render, Processor processor) {
         this.processor = processor;
         this.render = render;
         prepareSprite();

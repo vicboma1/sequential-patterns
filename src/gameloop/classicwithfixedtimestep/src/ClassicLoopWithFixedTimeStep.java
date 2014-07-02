@@ -2,8 +2,8 @@ package gameloop.classicwithfixedtimestep.src;
 
 import doublebuffer.render.Render;
 import gameloop.api.Game;
-import gameloop.api.Updateable;
 import gameloop.utils.sprite.Sprite2D;
+import updatemethod.processor.Processor;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -22,7 +22,7 @@ public class ClassicLoopWithFixedTimeStep implements Game {
     private static final int EXPECTED_FPS = 60;
 
     private Render render;
-    private Updateable processor;
+    private Processor processor;
 
     private List<Sprite2D> sprite2DList;
     private int fixedLoop;
@@ -34,7 +34,7 @@ public class ClassicLoopWithFixedTimeStep implements Game {
     private long initTimeFPS;
 
 
-    public ClassicLoopWithFixedTimeStep(Render render, Updateable processor) {
+    public ClassicLoopWithFixedTimeStep(Render render, Processor processor) {
         this.processor = processor;
         this.render = render;
         this.ticksFPS = 0;

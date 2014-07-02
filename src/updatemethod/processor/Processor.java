@@ -14,10 +14,10 @@ public class Processor implements Updateable {
     }
 
     public void update(List<Sprite2D> sprite2DList) {
-        sprite2DList.stream().sequential().forEach(x -> x.increaseAngle());
+        sprite2DList.stream().sequential().forEach(x -> x.updateAngle());
     }
 
     public void update(Double delta, List<Sprite2D> sprite2DList) {
-        sprite2DList.stream().sequential().forEach(x -> x.increaseAngle(delta));
+        sprite2DList.stream().sequential().forEach(x -> x.updateAngle(delta));
     }
 }

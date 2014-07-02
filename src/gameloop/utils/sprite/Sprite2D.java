@@ -55,11 +55,12 @@ public class Sprite2D implements Cloneable {
         ((Graphics2D) grafico).drawImage(imageIcon.getImage(), affineTransform, null);
     }
 
-    public int increaseAngle(Double delta) {
+
+    public int updateAngle(Double delta) {
         return (int) ((angle++) * delta);
     }
 
-    public int increaseAngle() {
+    public int updateAngle() {
         return angle++;
     }
 

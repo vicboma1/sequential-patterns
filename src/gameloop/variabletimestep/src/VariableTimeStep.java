@@ -2,8 +2,8 @@ package gameloop.variabletimestep.src;
 
 import doublebuffer.render.Render;
 import gameloop.api.Game;
-import gameloop.api.Updateable;
 import gameloop.utils.sprite.Sprite2D;
+import updatemethod.processor.Processor;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -19,7 +19,7 @@ public class VariableTimeStep implements Game {
     private static final int SKIP_TICKS = NANOSECOND / EXPECTED_FPS;
 
     private Render render;
-    private Updateable processor;
+    private Processor processor;
 
     private List<Sprite2D> sprite2DList;
 
@@ -34,7 +34,7 @@ public class VariableTimeStep implements Game {
     private long millis;
 
 
-    public VariableTimeStep(Render render, Updateable processor) {
+    public VariableTimeStep(Render render, Processor processor) {
         this.processor = processor;
         this.render = render;
         this.ticksFPS = 0;
