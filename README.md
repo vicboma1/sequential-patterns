@@ -5,6 +5,8 @@ Sequential-patterns
   * ```Classic with Fixed Time Step```
   * ```Time Step Variable```
   
+* [Double Buffer](https://github.com/victorakamon/sequential-patterns/tree/master/src/doublebuffer) / [Test](https://github.com/victorakamon/sequential-patterns/blob/master/test/doublebuffer)
+  
 
  References:
   * http://www.java-gaming.org/index.php?topic=24220.0
