@@ -1,5 +1,6 @@
-package doublebuffer;
+package doublebuffer.render;
 
+import gameloop.api.Drawable;
 import gameloop.utils.sprite.Sprite2D;
 import gameloop.utils.windows.Windows;
 
@@ -9,7 +10,7 @@ import java.util.List;
 /**
  * Created by vicboma on 30/06/14.
  */
-public class Render {
+public class Render implements Drawable {
 
     private Windows windows;
     private BufferedImage bufferedImage;

@@ -1,5 +1,6 @@
 package doublebuffer;
 
+import doublebuffer.render.Render;
 import gameloop.utils.sprite.Sprite2D;
 import gameloop.utils.windows.Windows;
 

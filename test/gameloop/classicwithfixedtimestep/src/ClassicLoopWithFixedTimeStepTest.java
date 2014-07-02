@@ -1,8 +1,9 @@
 package gameloop.classicwithfixedtimestep.src;
 
-import doublebuffer.Render;
-import gameloop.utils.processor.Processor;
+import doublebuffer.render.Render;
+import gameloop.api.Updateable;
 import gameloop.utils.windows.Windows;
+import updateMethod.processor.Processor;
 
 public class ClassicLoopWithFixedTimeStepTest {
 
@@ -11,7 +12,7 @@ public class ClassicLoopWithFixedTimeStepTest {
 
         final Windows windows = new Windows();
         final Render render = new Render(windows);
-        final Processor processor = new Processor();
+        final Updateable processor = new Processor();
 
         final ClassicLoopWithFixedTimeStep ClassicLoopWithFixedTimeStep = new ClassicLoopWithFixedTimeStep(render, processor);
         ClassicLoopWithFixedTimeStep.mainLoop();

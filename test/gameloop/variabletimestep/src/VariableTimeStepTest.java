@@ -1,8 +1,9 @@
 package gameloop.variabletimestep.src;
 
-import doublebuffer.Render;
-import gameloop.utils.processor.Processor;
+import doublebuffer.render.Render;
+import gameloop.api.Updateable;
 import gameloop.utils.windows.Windows;
+import updateMethod.processor.Processor;
 
 public class VariableTimeStepTest {
 
@@ -11,7 +12,7 @@ public class VariableTimeStepTest {
 
         final Windows windows = new Windows();
         final Render render = new Render(windows);
-        final Processor processor = new Processor();
+        final Updateable processor = new Processor();
 
         final VariableTimeStep variableTimeStep = new VariableTimeStep(render, processor);
         variableTimeStep.mainLoop();
