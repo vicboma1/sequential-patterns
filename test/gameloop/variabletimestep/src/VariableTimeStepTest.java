@@ -1,8 +1,8 @@
 package gameloop.variabletimestep.src;
 
-import gameloop.variabletimestep.utils.processor.Processor;
-import gameloop.variabletimestep.utils.render.Render;
-import gameloop.variabletimestep.utils.windows.Windows;
+import doublebuffer.Render;
+import gameloop.utils.processor.Processor;
+import gameloop.utils.windows.Windows;
 
 public class VariableTimeStepTest {
 

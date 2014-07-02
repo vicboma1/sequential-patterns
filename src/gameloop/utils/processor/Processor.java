@@ -1,6 +1,6 @@
-package gameloop.classicwithfixedtimestep.utils.processor;
+package gameloop.utils.processor;
 
-import gameloop.classicwithfixedtimestep.utils.sprite.Sprite2D;
+import gameloop.utils.sprite.Sprite2D;
 
 import java.util.List;
 
@@ -12,8 +12,11 @@ public class Processor {
     public Processor() {
     }
 
-
     public void update(List<Sprite2D> sprite2DList) {
         sprite2DList.stream().sequential().forEach(x -> x.increaseAngle());
+    }
+
+    public void update(Double delta, List<Sprite2D> sprite2DList) {
+        sprite2DList.stream().sequential().forEach(x -> x.increaseAngle(delta));
     }
 }

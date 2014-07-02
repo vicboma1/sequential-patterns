@@ -1,9 +1,9 @@
 package gameloop.classicwithfixedtimestep.src;
 
+import doublebuffer.Render;
 import gameloop.api.Game;
-import gameloop.classicwithfixedtimestep.utils.processor.Processor;
-import gameloop.classicwithfixedtimestep.utils.render.Render;
-import gameloop.classicwithfixedtimestep.utils.sprite.Sprite2D;
+import gameloop.utils.processor.Processor;
+import gameloop.utils.sprite.Sprite2D;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class ClassicLoopWithFixedTimeStep implements Game {
 
-    public static final String RESOURCE_PATH = "./src/gameloop/resource/pop1.png";
+    public static final String RESOURCE_PATH = "./src/gameloop/utils/resource/pop1.png";
     private static final int UPDATES_PER_SECOND = 55;
     private static final int MILLISECOND = 1000;
     private static final int SKIP_TICKS = MILLISECOND / UPDATES_PER_SECOND;
@@ -104,7 +104,7 @@ public class ClassicLoopWithFixedTimeStep implements Game {
         this.render.begin();
         this.render.draw("PreviousTime: " + previousTime, 0, 12);
         this.render.draw("ActualTime: " + actualTime, 210, 12);
-        this.render.draw("Diff: " + (previousTime-actualTime), 400, 12);
+        this.render.draw("Diff: " + (previousTime - actualTime), 400, 12);
         this.render.draw("Frames Per Second: " + this.ticksPerSecondFPS + " = " + EXPECTED_FPS + " " + (this.ticksPerSecondFPS >= EXPECTED_FPS), 450, 12);
         this.render.draw(sprite2DList);
         this.render.end();

@@ -1,9 +1,9 @@
 package gameloop.variabletimestep.src;
 
+import doublebuffer.Render;
 import gameloop.api.Game;
-import gameloop.variabletimestep.utils.processor.Processor;
-import gameloop.variabletimestep.utils.render.Render;
-import gameloop.variabletimestep.utils.sprite.Sprite2D;
+import gameloop.utils.processor.Processor;
+import gameloop.utils.sprite.Sprite2D;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -13,8 +13,7 @@ import java.util.List;
  * Created by vicboma on 30/06/14.
  */
 public class VariableTimeStep implements Game {
-
-    public static final String RESOURCE_PATH = "./src/gameloop/resource/pop1.png";
+    public static final String RESOURCE_PATH = "./src/gameloop/utils/resource/pop1.png";
     private static final int EXPECTED_FPS = 60;
     private static final int NANOSECOND = 1000000000;
     private static final int SKIP_TICKS = NANOSECOND / EXPECTED_FPS;

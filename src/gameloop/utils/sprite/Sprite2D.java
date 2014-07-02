@@ -1,4 +1,4 @@
-package gameloop.classicwithfixedtimestep.utils.sprite;
+package gameloop.utils.sprite;
 
 import javax.swing.*;
 import java.awt.*;
@@ -53,6 +53,10 @@ public class Sprite2D implements Cloneable {
         affineTransform.rotate(theta, x, y);
 
         ((Graphics2D) grafico).drawImage(imageIcon.getImage(), affineTransform, null);
+    }
+
+    public int increaseAngle(Double delta) {
+        return (int) ((angle++) * delta);
     }
 
     public int increaseAngle() {

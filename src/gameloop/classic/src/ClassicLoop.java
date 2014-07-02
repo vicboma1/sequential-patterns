@@ -1,9 +1,9 @@
 package gameloop.classic.src;
 
+import doublebuffer.Render;
 import gameloop.api.Game;
-import gameloop.classic.utils.processor.Processor;
-import gameloop.classic.utils.render.Render;
-import gameloop.classic.utils.sprite.Sprite2D;
+import gameloop.utils.processor.Processor;
+import gameloop.utils.sprite.Sprite2D;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -13,6 +13,8 @@ import java.util.List;
  * Created by vicboma on 30/06/14.
  */
 public class ClassicLoop implements Game {
+
+    public static final String RESOURCE_PATH = "./src/gameloop/utils/resource/pop1.png";
 
     private Render render;
     private Processor processor;
@@ -26,11 +28,10 @@ public class ClassicLoop implements Game {
 
     private void prepareSprite() {
         this.sprite2DList = new ArrayList<Sprite2D>();
-        Sprite2D sprite2D = new Sprite2D("./src/gameloop/resource/pop1.png");
+        Sprite2D sprite2D = new Sprite2D(RESOURCE_PATH);
 
-        for(int i=0 ; i<11 ;i++)
-        {
-            for(int j=0; j<18 ;j++) {
+        for (int i = 0; i < 11; i++) {
+            for (int j = 0; j < 18; j++) {
                 Sprite2D sprite2DClone = sprite2D.copy();
                 sprite2DClone.position(new Point(sprite2DClone.width() * j, sprite2DClone.height() * i));
                 sprite2DList.add(sprite2DClone);
@@ -41,8 +42,7 @@ public class ClassicLoop implements Game {
     @Override
     public void mainLoop() throws InterruptedException {
 
-        while (true)
-        {
+        while (true) {
             processInput();
             update();
             draw();
@@ -51,7 +51,9 @@ public class ClassicLoop implements Game {
     }
 
     private void draw() {
+        this.render.begin();
         this.render.draw(sprite2DList);
+        this.render.end();
     }
 
     private void update() {

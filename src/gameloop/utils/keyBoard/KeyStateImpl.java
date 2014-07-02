@@ -1,4 +1,4 @@
-package gameloop.classic.utils.keyBoard;
+package gameloop.utils.keyBoard;
 
 import javax.swing.*;
 import java.awt.event.KeyEvent;
@@ -7,7 +7,7 @@ import java.awt.event.KeyListener;
 /**
  * Created by vicboma on 30/06/14.
  */
-public class KeyStateImpl implements KeyState  {
+public class KeyStateImpl implements KeyState {
 
     private String key;
 

@@ -1,8 +1,8 @@
 package gameloop.classicwithfixedtimestep.src;
 
-import gameloop.classicwithfixedtimestep.utils.processor.Processor;
-import gameloop.classicwithfixedtimestep.utils.render.Render;
-import gameloop.classicwithfixedtimestep.utils.windows.Windows;
+import doublebuffer.Render;
+import gameloop.utils.processor.Processor;
+import gameloop.utils.windows.Windows;
 
 public class ClassicLoopWithFixedTimeStepTest {
 
