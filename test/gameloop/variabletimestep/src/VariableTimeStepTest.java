@@ -3,7 +3,7 @@ package gameloop.variabletimestep.src;
 import doublebuffer.render.Render;
 import gameloop.api.Updateable;
 import gameloop.utils.windows.Windows;
-import updatemethod123.processor.Processor;
+import updatemethod.processor.Processor;
 
 public class VariableTimeStepTest {
 
