@@ -1,7 +1,7 @@
-package gameloop.variabletimestep.utils.render;
+package doublebuffer;
 
-import gameloop.variabletimestep.utils.sprite.Sprite2D;
-import gameloop.variabletimestep.utils.windows.Windows;
+import gameloop.utils.sprite.Sprite2D;
+import gameloop.utils.windows.Windows;
 
 import java.awt.image.BufferedImage;
 import java.util.List;
