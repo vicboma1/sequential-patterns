@@ -7,7 +7,7 @@ Sequential-patterns
   
 * [Double Buffer](https://github.com/victorakamon/sequential-patterns/tree/master/src/doublebuffer) / [Test](https://github.com/victorakamon/sequential-patterns/blob/master/test/doublebuffer)
 
-* [Update Method](https://github.com/victorakamon/sequential-patterns/tree/master/src/updatemethod)
+* [Update Method](https://github.com/victorakamon/sequential-patterns/tree/master/src/updateMethod)
 
  References:
   * http://www.java-gaming.org/index.php?topic=24220.0

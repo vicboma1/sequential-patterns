@@ -3,7 +3,7 @@ package gameloop.classic.src;
 import doublebuffer.render.Render;
 import gameloop.api.Updateable;
 import gameloop.utils.windows.Windows;
-import updatemethod.processor.Processor;
+import updateMethod.processor.Processor;
 
 public class ClassicLoopTest {
 
