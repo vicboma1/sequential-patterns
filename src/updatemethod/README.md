@@ -12,3 +12,8 @@ Update Method
    The objects need to be simulated over time.
 
  Reference :  Bob Nystrom
+
+Others examples:
+```
+https://github.com/victorakamon/emulators/blob/master/chip8/src/core/Processor.java
+````
