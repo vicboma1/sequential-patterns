@@ -6,6 +6,7 @@ Sequential-patterns
   * ```Variable Time Step```
   
 * [Double Buffer](https://github.com/victorakamon/sequential-patterns/tree/master/src/doublebuffer) / [Test](https://github.com/victorakamon/sequential-patterns/blob/master/test/doublebuffer)
+  * ````Buffer pool images ```
 
 * [Update Method](https://github.com/victorakamon/sequential-patterns/tree/master/src/updatemethod)
 
