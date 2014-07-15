@@ -8,3 +8,10 @@ Double Buffer
  When information is written to a buffer, it occurs on the next buffer. 
  When the changes are complete, a swap operation swaps the next and current buffers instantly so that the new buffer is 
  now publicly visible. The old current buffer is now available to be reused as the new next buffer.
+ 
+ Others examples
+ ``` 
+ Based on buffer pool images:
+ https://github.com/victorakamon/emulators/blob/master/chip8/src/emulator/specification/graphics/BufferPoolImage.java
+ ```
+ 
