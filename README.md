@@ -9,9 +9,6 @@ Sequential-patterns
 
 * [Update Method](https://github.com/victorakamon/sequential-patterns/tree/master/src/updatemethod)
 
-* [Dispose Method](https://github.com/victorakamon/emulators/tree/master/chip8/src/emulator/dispose)
-
-
  References:
   * http://www.java-gaming.org/index.php?topic=24220.0
   * http://entropyinteractive.com/2011/02/game-engine-design-the-game-loop/  
