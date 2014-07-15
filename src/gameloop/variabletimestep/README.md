@@ -13,3 +13,10 @@ Time Step with Variable in Game Loop
 * Disadvantages
   * ```Hard to record actions```
   * ```Physics are not predictable```
+  
+  
+
+Others examples:
+```
+https://github.com/victorakamon/emulators/blob/master/chip8/src/core/Processor.java
+```
