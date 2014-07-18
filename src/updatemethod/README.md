@@ -15,5 +15,5 @@ Update Method
 
 Others examples:
 ```
-https://github.com/victorakamon/emulators/blob/master/chip8/src/core/Processor.java
+https://github.com/vicboma1/emulators/blob/master/chip8/src/core/Processor.java
 ````
