@@ -22,3 +22,7 @@ Sequential-patterns
  Best practices:
   * Multithreaded Game Loop Async (Backend) : http://www.mundijuegos.com/multijugador/knockout-bingo/
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/vicboma1/sequential-patterns/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
