@@ -1,11 +1,14 @@
 package gameloop.utils.windows;
 
-import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.awt.*;
+
+import static junit.framework.Assert.assertNotNull;
+import static org.mockito.Mockito.spy;
+import static org.mockito.Mockito.verify;
 
 /**
  * Created by vicboma on 13/10/15.
@@ -28,20 +31,21 @@ public class WindowsTest {
     @Test
     public void testGraphics() throws Exception {
         final Graphics graphics = windows.graphics();
-        Assert.assertNotNull(graphics);
+        assertNotNull(graphics);
     }
 
     @Test
     public void testWidth() throws Exception {
-        final int width = windows.width();
-        Assert.assertTrue(width <= Windows.WIDTH);
+        final Windows windowsSpy = spy(windows);
+        windowsSpy.width();
+        verify(windowsSpy).width();
     }
 
     @Test
     public void testHeigth() throws Exception {
-        final int heigth = windows.heigth();
-        final int windowHe = Windows.HEIGHT - BORDER;
-        Assert.assertTrue(heigth <= windowHe);
+        final Windows windowsSpy = spy(windows);
+        windowsSpy.heigth();
+        verify(windowsSpy).heigth();
     }
 
 }
