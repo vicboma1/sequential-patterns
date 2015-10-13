@@ -71,6 +71,7 @@ But there are still some problems:
  ```
    
  References:
+  * Bob Nystrom
   * http://www.java-gaming.org/index.php?topic=24220.0
   * http://entropyinteractive.com/2011/02/game-engine-design-the-game-loop/  
   * http://stackoverflow.com/questions/18283199/java-main-game-loop
