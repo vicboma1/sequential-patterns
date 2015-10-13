@@ -6,7 +6,7 @@ Sequential-patterns
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/vicboma1/sequential-patterns/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 [![Analytics](https://ga-beacon.appspot.com/UA-68658653-1/sequential-patterns/readme)](https://github.com/igrigorik/ga-beacon)
 
-* [Game Loop](https://github.com/victorakamon/sequential-patterns/tree/master/src/gameloop) / [Test](https://github.com/victorakamon/sequential-patterns/blob/master/test/gameloop)
+* [Game Loop](https://github.com/victorakamon/sequential-patterns/tree/master/src/gameloop) / [Test](https://github.com/victorakamon/sequential-patterns/blob/master/test/gameloop) -       [    Demo Video](https://youtu.be/O_r42sV9xMM)
   * Classic
   ```
   The problem with it is you have no control over how fast time the game runs.
