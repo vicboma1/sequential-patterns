@@ -86,7 +86,7 @@ public class KeyStateImplTest {
 
     private final Map<Integer,String> mapKeyListener = new Hashtable(){
         {
-            put(KeyEvent.VK_SPACE,"␣");
+            put(KeyEvent.VK_SPACE,"Space");
             put(KeyEvent.VK_A,"A");
             put(KeyEvent.VK_B,"B");
             put(KeyEvent.VK_UP,"↑");
