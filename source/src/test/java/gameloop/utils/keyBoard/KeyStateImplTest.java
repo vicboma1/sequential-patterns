@@ -89,11 +89,11 @@ public class KeyStateImplTest {
             put(KeyEvent.VK_SPACE,"Space");
             put(KeyEvent.VK_A,"A");
             put(KeyEvent.VK_B,"B");
-            put(KeyEvent.VK_UP,"↑");
-            put(KeyEvent.VK_DOWN,"↓");
-            put(KeyEvent.VK_LEFT,"←");
-            put(KeyEvent.VK_RIGHT,"→");
-            put(KeyEvent.VK_ESCAPE,"⎋");
+            put(KeyEvent.VK_UP,"Up");
+            put(KeyEvent.VK_DOWN,"Down");
+            put(KeyEvent.VK_LEFT,"Left");
+            put(KeyEvent.VK_RIGHT,"Right");
+            put(KeyEvent.VK_ESCAPE,"Escape");
 
 
 
