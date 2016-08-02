@@ -2,7 +2,6 @@ Sequential-patterns
 ==================
 [![Build Status](https://travis-ci.org/vicboma1/sequential-patterns.svg?branch=master)](https://travis-ci.org/vicboma1/sequential-patterns) [![Coverage Status](https://coveralls.io/repos/vicboma1/sequential-patterns/badge.svg?branch=master&service=github)](https://coveralls.io/github/vicboma1/sequential-patterns?branch=master)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.eluder.coveralls/coveralls-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.eluder.coveralls/coveralls-maven-plugin/)
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/vicboma1/sequential-patterns/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 [![Analytics](https://ga-beacon.appspot.com/UA-68658653-1/sequential-patterns/readme)](https://github.com/igrigorik/ga-beacon)
 
 * [Game Loop](https://github.com/vicboma1/sequential-patterns/tree/master/source/src/main/java/gameloop) / [Test](https://github.com/vicboma1/sequential-patterns/tree/master/source/src/test/java/gameloop) -       [    Demo Video](https://youtu.be/O_r42sV9xMM)
